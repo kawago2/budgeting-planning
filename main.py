@@ -19,7 +19,7 @@ budget = int(input('Masukkan pemasukan anda: '))
 percent_living = living * 100
 percent_playing = playing * 100
 percent_saving = saving * 100
-percentage = [percent_living, percent_playing, percent_saving]
+percentage = [percent_playing, percent_living, percent_saving]
 sum = 00.0
 percent_budget = (living + playing + saving)*100
 
