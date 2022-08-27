@@ -6,6 +6,7 @@ import time
 living = 0.30
 playing = 0.20
 saving = 0.50
+
 # # default budgeting percentage (married)
 # living = 0.30
 # playing = 0.15
