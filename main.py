@@ -1,3 +1,4 @@
+from modul import print_line
 import time
 from pyfiglet import Figlet
 
@@ -55,9 +56,6 @@ while True:
         print(line_new)
         time.sleep(0.5)
 
-    def print_line(command, budget):
-        print('%-12s  %-12s' % (
-            command, str(budget)))
     print_line('Budget anda', '{:,.3f}'.format(budget))
     print_line('kebutuhan', '{:,.3f}'.format(budget_living))
     print_line('kegiatan', '{:,.3f}'.format(budget_playing))

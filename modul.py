@@ -22,11 +22,16 @@ def transform_to_rupiah_format(value):
 def formatrupiah(uang):
     y = str(uang)
     if len(y) <= 3:
-        return 'Rp ' + y 
+        return 'Rp ' + y
     else:
         p = y[-3:]
         q = y[:-3]
-        return formatrupiah(q) + '.' + p 
+        return formatrupiah(q) + '.' + p
+
+
+def print_line(command, budget):
+    print('%-12s  %-12s' % (
+        command, str(budget)))
 
 
 # untuk menguji code diatas atau proses debugging, gunakan:
