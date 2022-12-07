@@ -46,7 +46,7 @@ while True:
 
     print('========================================================')
     for x in loading:
-        if x == 100:
+        if x == '100':
             assign = '(DONE)'
         else:
             assign = '(CHECKING)'
@@ -55,14 +55,13 @@ while True:
         print(line_new)
         time.sleep(2)
 
-    print('%-12s  %-12s' % (
-        'Budget anda', str(budget)))
-    print('%-12s  %-12s' % (
-        'kebutuhan', str(budget_living)))
-    print('%-12s  %-12s' % (
-        'kegiatan', str(budget_playing)))
-    print('%-12s  %-12s' % (
-        'tabungan', str(budget_saving)))
+    def print_line(command, budget):
+        print('%-12s  %-12s' % (
+            command, str(budget)))
+    print_line('Budget anda', '{:,.3f}'.format(budget))
+    print_line('kebutuhan', '{:,.3f}'.format(budget_living))
+    print_line('kegiatan', '{:,.3f}'.format(budget_playing))
+    print_line('tabungan', '{:,.3f}'.format(budget_saving))
     # print('Pemasukan anda untuk kebutuhan hidup adalah\t: {}'.format
     #       (budget_living))
 
