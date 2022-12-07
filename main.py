@@ -53,7 +53,7 @@ while True:
         line_new = '%-12s  %-12s  %-12s' % (
             'Loading.....', str(x)+'%', assign)
         print(line_new)
-        time.sleep(2)
+        time.sleep(0.5)
 
     def print_line(command, budget):
         print('%-12s  %-12s' % (
