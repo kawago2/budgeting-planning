@@ -62,12 +62,5 @@ while True:
     print_line('kebutuhan', '{:,.3f}'.format(budget_living))
     print_line('kegiatan', '{:,.3f}'.format(budget_playing))
     print_line('tabungan', '{:,.3f}'.format(budget_saving))
-    # print('Pemasukan anda untuk kebutuhan hidup adalah\t: {}'.format
-    #       (budget_living))
-
-    # print('Pemasukan anda untuk kegiatan adalah\t\t: {}'.format(
-    #     budget_playing))
-    # print('Pemasukan anda untuk tabungan adalah\t\t: {}'.format
-    #       (budgett_saving))
     print('========================================================')
     break
